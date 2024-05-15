@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<div id="app">
+    <h1>alllalalallalal 默认会被覆盖</h1>
+</div>
+<template id="why">
+    <div>
+        <h2>{{message}}</h2>
+        <h2>{{counter}}</h2>
+        <button @click="increment">+1</button>
+        <button @click="decrement">-1</button>
+    </div>
+</template>
+
+
+<body>
+    <!-- 以下是引入vue依赖库三种的方式 -->
+
+<!-- 方式一 cdn-->
+<!-- 引入 Vue 3 的 CDN 资源网络加载不了 加载慢-->
+<!-- <script src="https://unpkg.com/vue@next"></script> -->
+
+<!-- 引入 Vue 3 的 CDN 资源 公司网络加载不了  无用-->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>-->
+
+<!-- 引入 Vue 3 的 CDN 资源 公司网络能加载  有用 -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.12/vue.global.min.js"></script> -->
+
+<!-- 方式二 本地-->
+<!-- 引入 Vue 3 的本地js 有用 -->
+<!-- 把cdn远程vue.global.min.js文件复制到本地，命名，接着真实路径引用-->
+<!-- 相对路径 -->
+<!-- <script src="vue3.2.12global.js"></script> -->
+<!-- 绝对路径 -->
+<!-- <script src="D:\html_project\vue_to_android\vue3.2.12global.js"></script> -->
+
+<!-- 方式三 安装vue.js引入电脑全局 就不需要再文件引用，就可以打开了 -->
+<!-- 下载安装node.js,使用node命令 `npm install vue -g`下载安装vue.js 到电脑全局，检查是否安装成功 `npm list vue` 有用  -->
+<script>
+        Vue.createApp({
+            template: '#why',
+            data: function() {
+                return {
+                    message: "hello world!",
+                    counter: 100
+                }
+            },
+            methods: {
+                increment() {
+                    this.counter++;
+                    console.log("点击了+1");
+                },
+                decrement() {
+                    this.counter--;
+                    consloe.log("点击了-1");
+                }
+            }
+
+        }).mount("#app")
+    </script>
+
+</body>
+
+</html>

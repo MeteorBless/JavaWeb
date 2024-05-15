@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn使用方式 -->
+    <script src="js/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+</head>
+<body>
+
+    <div id="app">
+
+        <h1>{{msg}}</h1>
+
+        <a v-bind:href="url">link1</a>
+        <a :href="url">link2</a>
+
+        <input type="text" v-model="url"> <br>
+
+        <button v-on:click="handle">你好</button>
+
+    </div>
+    <script type="module">
+        const { createApp } = Vue;
+        
+        createApp({
+            data() {
+                return {
+                    msg: 'Hello Vue 3!',
+                    url:"https://www.baidu.com",
+                };
+            },
+            methods: {
+                        handle:function(){
+                            alert("我被点击了！");
+                        }
+            }
+        }).mount('#app');
+
+    </script>
+    
+</body>
+</html>

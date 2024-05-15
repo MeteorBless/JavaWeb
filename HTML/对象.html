@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>对象</title>
+        
+    </head>
+
+    <body>
+
+        <img src="img/image.png" id="h1"> <br>
+
+        <div class="cls">船只驾驭</div> <br>
+        <div class="cls">大师傅Iasi</div> <br>
+
+        <input type="checkbox" name="hobby"> 电影
+        <input type="checkbox" name="hobby"> 游戏
+        <input type="checkbox" name="hobby"> 旅游
+
+
+    </body>
+</html>
+
+<script>
+/*     var user = {
+        name:"Room",
+        age:20,
+        gender:"male",
+        eat:function(){
+            alert("用膳~")
+        }
+    };
+
+    user.eat();
+
+    document.write(user.name); */
+
+    
+    // JSON：javascript对象标记法（object notation）
+/*     var jsonstr = '{"name":"Jerry","age":18,"addr":["北京","南京","上海"]}';
+
+    var obj = JSON.parse(jsonstr); // 将字符串转为Json
+
+    alert(jsonstr.name);
+    alert(obj.name);
+
+    alert(JSON.stringify(obj)); //将Json转为字符串 */
+
+    // BOM：浏览器对象模型 Window Navigator Screen History Location
+
+/*     window.alert();
+    var flag = window.confirm("你确定要删除这条记录吗");
+    window.setInterval(); //周期性执行
+    window.setTimeout();  //延迟指定时间执行一次
+     */
+/*     setTimeout(function(){
+        alert("执行");
+    },2000);
+
+    alert(location.href="https://www.baidu.com"); */
+
+    // DOM：文件对象模型 Document Element Attribute Text 
+    // 改变HTML元素的内容
+    // 改变HTML元素的CSS
+    // 对HTML DOM时间作出反应
+    // 添加和删除HTML元素
+
+    var img = document.getElementById("h1");
+    img.src="./img/image-2.png"
+    
+
+</script>
