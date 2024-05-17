@@ -1,11 +1,13 @@
 package com.nusit.controller;
 
+import com.nusit.pojo.Address;
 import com.nusit.pojo.User;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,6 +26,7 @@ import java.util.List;
 
 @RestController
 public class RequestController {
+
     @RequestMapping("/simpleParam")
     public String simpleParam(@RequestParam(value = "name",required = false) String username, Integer age){
         // 参数名需要对应 不对应会返回null
@@ -59,7 +62,7 @@ public class RequestController {
         return "OK";
     }
 
-//    RequestBody 封装json数据
+    //    RequestBody 封装json数据
     @RequestMapping("/jsonParam")
     public String jsonParam(@RequestBody User user){
         // 参数名需要对应 不对应会返回null
