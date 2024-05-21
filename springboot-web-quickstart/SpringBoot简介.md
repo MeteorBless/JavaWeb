@@ -35,4 +35,17 @@ httpServletResponse 获取响应数据
 
 ![img10.png](img/img_10.png)
 
+### 分层解耦
+
+![img11.png](img/img_11.png)
+
+![img12.png](img/img_12.png)
+
+### 控制反转和依赖注入 是为了层与层之间的解耦
+
+![img13.png](img/img_13.png)
+
+![img14.png](img/img_14.png)
+
+![img15.png](img/img_15.png)
 
