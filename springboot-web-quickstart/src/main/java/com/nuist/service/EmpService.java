@@ -1,6 +1,6 @@
-package com.nusit.service;
+package com.nuist.service;
 
-import com.nusit.pojo.Emp;
+import com.nuist.pojo.Emp;
 
 import java.util.List;
 

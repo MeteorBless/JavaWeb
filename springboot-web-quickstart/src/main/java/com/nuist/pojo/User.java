@@ -1,4 +1,4 @@
-package com.nusit.pojo;
+package com.nuist.pojo;
 
 public class User {
     private String name;

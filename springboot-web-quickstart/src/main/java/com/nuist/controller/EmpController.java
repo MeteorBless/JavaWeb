@@ -1,9 +1,8 @@
-package com.nusit.controller;
+package com.nuist.controller;
 
-import com.nusit.pojo.Emp;
-import com.nusit.pojo.Result;
-import com.nusit.service.EmpService;
-import com.nusit.service.EmpServiceA;
+import com.nuist.pojo.Emp;
+import com.nuist.pojo.Result;
+import com.nuist.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

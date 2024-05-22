@@ -1,8 +1,7 @@
-package com.nusit.dao;
+package com.nuist.dao;
 
-import com.nusit.pojo.Emp;
-import com.nusit.utils.XmlParserUtils;
-import org.springframework.stereotype.Component;
+import com.nuist.pojo.Emp;
+import com.nuist.utils.XmlParserUtils;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

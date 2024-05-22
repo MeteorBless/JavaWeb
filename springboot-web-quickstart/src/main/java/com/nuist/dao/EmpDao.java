@@ -1,6 +1,6 @@
-package com.nusit.dao;
+package com.nuist.dao;
 
-import com.nusit.pojo.Emp;
+import com.nuist.pojo.Emp;
 
 import java.util.List;
 

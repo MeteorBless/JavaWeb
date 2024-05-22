@@ -1,15 +1,10 @@
-package com.nusit.service;
+package com.nuist.service;
 
-import com.nusit.dao.EmpDao;
-import com.nusit.dao.EmpDaoA;
-import com.nusit.pojo.Emp;
-import org.dom4j.Element;
+import com.nuist.dao.EmpDao;
+import com.nuist.pojo.Emp;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Constructor;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
