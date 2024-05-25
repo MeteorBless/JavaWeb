@@ -1,6 +1,7 @@
 package com.nuist.mapper_mango;
 
 import com.nuist.pojo.Emp;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -60,4 +61,11 @@ public interface EmpMapper {
      * 通过用户名和密码获取员工信息
      * */
     Emp getByUssernameAndPassword(Emp emp);
+
+
+    /**
+     * 根据部门id删除相应的员工数据
+     * */
+    @Delete("delete from emp where dept_id = #{deptId}")
+    void deleteByDeptId(Integer deptId);
 }

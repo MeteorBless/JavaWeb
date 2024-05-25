@@ -1,5 +1,6 @@
 package com.nuist.controller;
 
+import com.nuist.anno.Log;
 import com.nuist.pojo.Dept;
 import com.nuist.pojo.Result;
 import com.nuist.service.DeptService;
@@ -24,6 +25,7 @@ public class DeptController {
 
     // 指定请求方式为get
 //    @RequestMapping (value = "/depts",method = RequestMethod.GET)
+    @Log
     @GetMapping
     public Result list(){
         log.info("查询所有部门信息");
@@ -35,6 +37,7 @@ public class DeptController {
     * 删除部门
     * @return
     * */
+    @Log
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id){
         log.info("根据id删除部门"+id);
@@ -46,6 +49,7 @@ public class DeptController {
      * 新增部门
      * @return
      * */
+    @Log
     @PostMapping
     public Result add(@RequestBody Dept dept){
         log.info("新增部门：{}",dept);
